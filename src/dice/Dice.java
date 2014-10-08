@@ -12,20 +12,11 @@ public class Dice {
     {
         if(start >= end)
             throw new IllegalArgumentException("Start cannot exceed End.");
-        int dice = random.nextInt(end);
+        int dice = random.nextInt(end)+start;
         return dice;
     }
 
-    public static void log(String message)
-    {
-        System.out.println(message);
-    }
-
-    public static void main(String args[])
-    {
-        Dice dice = new Dice();
-        log("Dice:"+dice.getDice(1,6));
-        log("Dice:"+dice.getDice(1,6));
-    }
 }
+
+
 			
