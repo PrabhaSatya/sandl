@@ -1,4 +1,4 @@
-package dice;
+package traverse;
 
 import org.junit.Test;
 
@@ -16,13 +16,13 @@ public class DiceTest {
 
         int start = 1;
         int end = 6;
-        Dice dice = new Dice();
+        Dice dice = Dice.getInstance();
         int diceValue = dice.getDice(start,end);
 
         assertTrue("start less than diceValue",start<diceValue);
         assertTrue("diceValue less than end",diceValue<end);
 
-        loger.log(Level.INFO,"dice with in range");
+        loger.log(Level.INFO,"traverse with in range");
 
     }
 }
